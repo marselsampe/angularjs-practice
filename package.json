@@ -1,0 +1,12 @@
+{
+  "name": "angularjs-practice",
+  "version": "0.0.1",
+  "description": "my angularjs try n error",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  },
+  "scripts": {
+    "start": "http-server ./app -a localhost -p 8000 -c-1"
+  }
+}

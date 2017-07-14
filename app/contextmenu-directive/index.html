@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Angular Practice</title>
+	</head>
+	<body ng-app="MyApp">
+    	<script src="../bower_components/angular/angular.js"></script>
+		<script src="onRightClickDirective.js"></script>
+		<script src="myContextMenuDirective.js"></script>
+		<script src="app.js"></script>
+
+		<style>
+			.container{
+				width: 300px;
+				height: 200px;
+				background-color: #f9f7f7;
+				border: 1px solid black;
+			}
+
+			.contextmenu-wrapper{
+				width: 150px;
+				background-color: gray;
+				border: 1px solid red;
+				position: absolute;
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			.contextmenu-item{
+				list-style-type: none;
+				background-color: gray;
+				margin: 5px;
+			}
+
+			.contextmenu-item:hover{
+				background-color: antiquewhite;
+				cursor: pointer;
+			}
+		</style>
+
+		<div ng-controller="myCtrl">
+			<div id="container1" class="container">
+				<my-contextmenu id="contextmenu1" options="ContextMenuOptions"></my-contextmenu>
+				Right click inside this to display Context Menu
+			</div>
+		</div>
+	</body>
+</html>
